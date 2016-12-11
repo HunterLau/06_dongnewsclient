@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/siv"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        />
+    <!-- 改为SmartImageView
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        />
+        -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="那都快来归纳卡拉曼达格拉姆落落大方客观来说"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/siv"
+        android:singleLine="true"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大结构机构莲富大厦控股看了看"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/siv"
+        android:layout_below="@id/tv_title"
+        android:lines="2"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <!--tv_comment的 layout_width="match_parent"  显示在图下方左侧-->
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123675条评论"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_detail"
+        android:textColor="#ff0000"
+        />
+
+
+</RelativeLayout>
